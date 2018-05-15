@@ -1,5 +1,4 @@
 import {expect} from 'chai';
-import jsdom from 'node-jsdom';
 import fs from 'fs';
 
 describe('Our first Test', () => {
