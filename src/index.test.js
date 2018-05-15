@@ -8,15 +8,3 @@ describe('Our first Test', () => {
     });
 });
 
-
-describe('index.html', () => {
-    it('it should have h1', (done) => {
-        const index = fs.readFileSync('./src/index.html', "utf-8");
-        jsdom.env(index, function(err, window) {
-            const h1 = window.document.getElementByTagName('h1')[0];
-            expect(h1.innerHTML).to.equal("Hello world");
-            done();
-            window.close();
-        });
-    })
-})
